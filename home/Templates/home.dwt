@@ -1,0 +1,35 @@
+<?php
+	session_start()
+?>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>無標題文件</title>
+</head>
+<body background="1.jpg">
+	<center>
+	<!-- TemplateBeginEditable name="title" -->title<!-- TemplateEndEditable -->
+		
+		<h2>教練我想打籃球</h2>
+		<hr width="70%" color="red">
+		<style>a{text-decoration:none}</style>
+		<big><b>
+		<a href="home.php">首頁</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="illustrate.html">遊玩說明</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="animation.html">動畫敘述</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+		<a href="reserve.php">遊戲預約</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="picture.php">照片區</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+		<a href="about_me.html">關於我
+		</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<?php
+			if($_SESSION["check_status"]=="login_ok")
+				{echo $_SESSION["name"]."你好";}	
+		?>
+		&nbsp;&nbsp;<a href="login.php">登入</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="logout.php">登出</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+		</b></big><br>
+		<!-- TemplateBeginEditable name="main" -->main<!-- TemplateEndEditable -->	
+	</center>
+</body>
+</html>
